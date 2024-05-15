@@ -1,0 +1,132 @@
+
+.show-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.show-card {
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.show-image-container {
+  position: relative;
+}
+
+.show-image {
+  width: 100%;
+  height: auto;
+}
+
+.show-name {
+  text-align: center;
+}
+
+.show-details {
+  padding: 10px;
+}
+
+.show-details-link {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.show-details-link:hover {
+  text-decoration: underline;
+}
+/* ShowDetails.css */
+
+.show-detail {
+  /* padding: 20px; */
+  display: flex;
+  gap: 23px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+  position: relative;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-top: 18px;
+}
+
+.show-details h2 {
+  margin-top: 0;
+}
+
+.show-details p {
+  margin-bottom: 20px;
+}
+.show-details p {
+  margin-bottom: 5px;
+  margin-top:5px
+}
+
+.show-details button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-details button:hover {
+  background-color: #0056b3;
+}
+.movie-booking-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  
+}
+
+.movie-booking-form h2 {
+  margin-bottom: 20px;
+}
+
+.movie-booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.movie-booking-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.movie-booking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-booking-form button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .show-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
