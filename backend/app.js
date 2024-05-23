@@ -7,9 +7,12 @@ const app = express();
 
 app.use(express.json());
 
-const connectionInstance = mongoose.connect('mongodbsrv');
+
+const connectionInstance = mongoose.connect(
+  "mongodb+srv://1101:1101@cluster0.5vpq94n.mongodb.net/noteApp"
+);
 console.log(
-  `\n MongoDB connected !! DB HOST: ${connectionInstance?.connection?.host}`
+  `\n MongoDB connected: ${connectionInstance?.connection?.host}`
 );
 
 app.use(cors());
